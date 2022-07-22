@@ -1,0 +1,21 @@
+.image_for_match{
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#match_blog{
+    width:100%;
+}
+.match_text{
+    margin-left: 40px;
+    padding: 10px;
+
+}
+.image_details img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    margin:10px 10px 0 10px;}

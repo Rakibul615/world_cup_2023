@@ -1,0 +1,299 @@
+
+
+
+/* header section start */
+
+.header_container{
+    height: 400px;
+    color: white;
+    display: flex;
+    background-color: black;
+    margin:40px 0px 50px 70px;   
+    border-radius: 10px;
+    width: 90%;
+}
+.header_text{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;   /* google font */
+    padding: 50px;
+}
+.header_text h1{
+   font-family: sans-serif;    
+    font-weight:bold;
+    width:50%;
+    font-size: 2.5rem;
+}
+.header_image img{
+    margin-right: 60px;
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+}
+/* transition effect in the header button start */
+.button{
+    background-color: aqua;
+    width: 20%;
+    height: 3rem;
+    border-radius: 10px;
+    transition: width 2s;
+}
+.button:hover{
+    width: 30%;
+}
+/* transition effect in the header button end */
+
+/* header section end */
+
+
+/* main container start */
+.main_container{
+     margin:100px 0px 0px 75px; 
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    justify-content: center;   
+    width: 92%;
+    grid-gap:10px;
+}
+
+.blog_container{    
+    display:grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 10px ;   
+}
+.blog{   
+    
+    height:350px;
+    width: 90%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+}
+.blog img{
+    height: 130px;
+    width: 100%;
+    border-radius: 10px;
+}
+.blog article{
+    padding: 5px;
+    margin:0 0 20px 15px;  
+}
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height:200px;
+    width: 300px;
+    background-color: black;
+    border-radius: 10px;  
+}
+.blog_site {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 10px;
+    height:3rem;
+    width: 75%;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.blog_site a{
+    text-decoration: none;       
+    font-weight: bold;
+}
+#blog_link{
+    background-color: aquamarine;
+}
+.icon{
+    display: flex;   
+}
+.icon>div{
+    margin-right: 50px;
+}
+#special_button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    display: none;
+}
+#button_for_tablet{
+    background-color:coral;
+    font-weight: bolder;
+    width: 20%;
+    height: 3rem;
+    border-radius: 10px;
+ }
+/* main container end */
+
+/* footer section start */
+#footer_section{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin: 100px 0 0 0;
+    color: white;
+    background-color: black;
+    height: auto;
+}
+#footer_title{
+    display: flex;
+    justify-content: center; 
+}
+.footer_subsection{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 3rem ;
+   
+}
+
+hr{
+    width: 75%;
+    height: 0px;
+    color: aliceblue;
+}
+#footer_icon_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px 30px 0px;
+}
+/* footer social icon design start */
+#footer_icon_section a{
+    color: white;
+    text-decoration: none;
+}
+.fa-linkedin{
+    color: #0A66C2;
+}
+.fa-youtube{
+    color:red
+}
+.fa-facebook{
+    color:#3A5898;
+}
+.fa-brands{
+    font-size: 1.25rem;
+}
+.icon_text{
+    margin-left: 5px;
+    font-size: larger;
+}
+/* footer social icon design end */
+
+/* footer section end */
+
+/* responsive of 768 px for iPad Mini in tablet start */
+
+@media screen and (min-width:480px)and (max-width:768px) {
+    .header_container{
+         margin-left: 15px; 
+         height: auto;
+         width:95%;
+    }
+    .button{
+       width:75%;
+       height: 80px;
+       font-size: 25px;
+    }
+    .main_container{    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);    
+        margin: 0 0 20px 15px;  
+        width: 100%;            
+    }
+    .link_container{     
+     flex-direction: row;
+     width: 92%;
+     background-color: #FFFFFF;        
+    }   
+    .blog_container{           
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 30px;
+        margin-top: 20px;      
+    }
+    .blog_site{
+        height:4rem ;
+        
+    }
+    .blog_site a{
+       font-size: 22px;
+       padding: 10px;
+       font-weight: bolder;
+    
+    }
+    #special_button{
+        visibility: visible;
+        display: flex;
+        width: 95%;
+        
+             
+    }
+    #button_for_tablet{
+        margin: 0;
+        font-size: larger;
+        width: 40%;
+        height: 4rem;
+        border-radius: 10px;
+     }  
+     #footer_section{
+      width: 100%;
+    } 
+    .footer_text{
+        font-size: 30px;
+    }
+
+    .footer_subsection{
+        flex-wrap: wrap;
+
+
+    } 
+    
+}
+
+/* responsive of 414 px for iphone XR in mobile start */
+@media screen and (max-width:414px) {   
+     .header_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:20px;
+        height: auto;
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+    .button{
+        width: 60%;
+        height: 80px;
+        font-size: 30px;
+     }
+    .main_container{    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);    
+        width: 90%; 
+        margin-left: 20px; 
+                 
+    }
+    .link_container{              
+        width: 92%;
+        background-color: #FFFFFF;         
+       }
+       .blog_container{           
+        grid-template-columns: repeat(1 ,1fr);
+        grid-gap: 30px;
+        margin-top: 20px;        
+    }
+    .blog{            
+        height:400px;
+        width: 100%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 10px;    
+    }
+    #footer_section{      
+         width: 100%;             
+    }
+    .footer_subsection{        
+        flex-direction: column;
+        align-items: center;              
+    }
+    .icon_text{
+        margin-left: 10px;
+    }
+}
